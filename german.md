@@ -13,11 +13,11 @@
 
 ### Weiterführende Informationen
 Weiterführende Informationen zum Erkrankungsbild können Sie hier finden:
-- Anästhesie (englisch): https://www.ai-online.info/images/ai-ausgabe/2020/02-2020/Supplement_02-2020_OrphanAnesthesia_2.pdf
+- Anästhesie (englisch): [](https://www.ai-online.info/images/ai-ausgabe/2020/02-2020/Supplement_02-2020_OrphanAnesthesia_2.pdf)
 
 
 - Allgemein (englisch) 
-   - https://www.muskelgesellschaft.ch/wp-content/uploads/2021/07/Collagen-VI-CMD.pdf
+   - (https://www.muskelgesellschaft.ch/wp-content/uploads/2021/07/Collagen-VI-CMD.pdf)
    - https://www.ncbi.nlm.nih.gov/books/NBK1503/  
   
 ### Navigation
