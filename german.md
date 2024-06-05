@@ -1,5 +1,5 @@
-# :globe_with_meridians: notfall.col6.de
-## :de: Kollagen-VI Muskeldystrophie Notfallpass
+# notfall.col6.de
+## Kollagen-VI Muskeldystrophie Notfallpass
 ### Notfallinformationen
 **Ich habe durch einen Gendefekt im Kollagen-VI eine Muskeldystophie. Bitte beachten Sie bei meiner Behandlung folgende Punkte:**
 - Es gibt keine bekannte Risikoerhöhung für eine maligne Hyperthermie
@@ -21,6 +21,6 @@ Weiterführende Informationen zum Erkrankungsbild können Sie hier finden:
    - https://www.ncbi.nlm.nih.gov/books/NBK1503/  
   
 ### Navigation
-[:house: Hauptseite](./index.md)  
-[:de: Deutsch](./german.md)  
-[:uk: Englisch](./englisch.md)
+[Hauptseite](./index.md)  
+[Deutsch](./german.md)  
+[Englisch](./englisch.md)
