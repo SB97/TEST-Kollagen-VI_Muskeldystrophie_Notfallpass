@@ -1,2 +1,9 @@
-# Kollagen-VI Muskeldystrophie Notfallpass
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+# :globe_with_meridians: notfall.col6.de
+
+
+
+<font size="7">[:de: Kollagen-VI Muskeldystrophie Notfallpass](./german.md)  </font>  
+<font size="7">[:uk: Collagen-VI Muskeldystrophie Emergencypass](./german.md)  </font> 
+
+
+
