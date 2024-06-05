@@ -1,4 +1,3 @@
-# Kollagen-VI Muskeldystrophie Notfallpass
 ## Notfallinformationen
 **Ich habe durch einen Gendefekt im Kollagen-VI eine Muskeldystophie. Bitte beachten Sie bei meiner Behandlung folgende Punkte:**
 - Es gibt keine bekannte Risikoerhöhung für eine maligne Hyperthermie
@@ -15,7 +14,7 @@ Weiterführende Informationen zum Erkrankungsbild können Sie hier finden:
 - Anästhesie (englisch): [https://www.ai-online.info/images/ai-ausgabe/2020/02-2020/Supplement_02-2020_OrphanAnesthesia_2.pdf](https://www.ai-online.info/images/ai-ausgabe/2020/02-2020/Supplement_02-2020_OrphanAnesthesia_2.pdf)  
 
 
-- Allgemein (englisch)  
+- Allgemein (englisch):  
    - [https://www.muskelgesellschaft.ch/wp-content/uploads/2021/07/Collagen-VI-CMD.pdf](https://www.muskelgesellschaft.ch/wp-content/uploads/2021/07/Collagen-VI-CMD.pdf)  
    - [https://www.ncbi.nlm.nih.gov/books/NBK1503/](https://www.ncbi.nlm.nih.gov/books/NBK1503/)  
   
