@@ -10,8 +10,8 @@ active: about
   <p>Diese Seiten stellen allgemeine, statische Notfallinformationen zur Kollagen‑VI‑Muskeldystrophie bereit. Es werden keine personenbezogenen Daten gespeichert oder verarbeitet.</p>
   <p>Der Quellcode ist bewusst einfach gehalten, ohne externe Abhängigkeiten. Bootstrap wird lokal ausgeliefert.</p>
   <ul>
-    <li><a href="{{ 'index.html' | relative_url }}">Startseite</a></li>
-    <li><a href="{{ 'german.html' | relative_url }}">Notfallinformationen (Deutsch)</a></li>
-    <li><a href="{{ 'english.html' | relative_url }}">Emergency information (English)</a></li>
+    <li><a href="{{ '/' | relative_url }}">Startseite</a></li>
+    <li><a href="{{ '/german.html' | relative_url }}">Notfallinformationen (Deutsch)</a></li>
+    <li><a href="{{ '/english.html' | relative_url }}">Emergency information (English)</a></li>
   </ul>
 </div>

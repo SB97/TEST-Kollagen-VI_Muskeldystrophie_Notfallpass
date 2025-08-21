@@ -1,5 +1,7 @@
 title: Kollagen-VI Muskeldystrophie Notfallpass - notfall.col6.de
 description: Statische Notfallinformationen, keine personenbezogenen Daten
+baseurl: "/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass"
+url: "https://sb97.github.io"
 markdown: kramdown
 permalink: pretty
 

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom" aria-label="{{ include.aria_label | default: 'Main navigation' }}">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ 'index.html' | relative_url }}">{% if include.lang == 'en' %}COL6 Emergency{% else %}COL6 Notfall{% endif %}</a>
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">{% if include.lang == 'en' %}COL6 Emergency{% else %}COL6 Notfall{% endif %}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="{{ include.toggle_label | default: 'Toggle navigation' }}">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-        <li class="nav-item"><a class="nav-link {% if include.active == 'de' %}active{% endif %}" href="{{ 'german.html' | relative_url }}">Deutsch</a></li>
-        <li class="nav-item"><a class="nav-link {% if include.active == 'en' %}active{% endif %}" href="{{ 'english.html' | relative_url }}">English</a></li>
+        <li class="nav-item"><a class="nav-link {% if include.active == 'de' %}active{% endif %}" href="{{ '/german.html' | relative_url }}">Deutsch</a></li>
+        <li class="nav-item"><a class="nav-link {% if include.active == 'en' %}active{% endif %}" href="{{ '/english.html' | relative_url }}">English</a></li>
         <li class="nav-item">
-          <a class="nav-link {% if include.active == 'about' %}active{% endif %}" href="{{ 'Markdown/' | relative_url }}">
+          <a class="nav-link {% if include.active == 'about' %}active{% endif %}" href="{{ '/Markdown/' | relative_url }}">
             {% if include.lang == 'de' %}Über das Projekt{% else %}About this project{% endif %}
           </a>
         </li>
