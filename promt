@@ -12,26 +12,27 @@ Inhalte der Notfallseite (fachlich)
 - Mehrsprachigkeit: Vollständige Inhalte auf Deutsch und Englisch
 
 Informationsarchitektur / Dateien
-- index.html:
+- index.md:
   - Front Matter (Jekyll): layout, title, lang, active
   - Inhalt: Hero/Intro und zwei große Buttons (Deutsch / English)
-- german.html und english.html:
+- german.md und english.md:
   - Front Matter (Jekyll): layout, title, lang, active
-  - Klar strukturierte Abschnitte gemäß „Inhalte der Notfallseite“
+  - Klar strukturierte Abschnitte gemäß „Inhalte der Notfallseite" (Markdown-Format)
 - _layouts/default.html: Basislayout, bindet Navbar/Footer ein, Skip‑Link, Basis‑Styles
 - _includes/navbar.html: Wiederverwendbare Navbar (DE/EN, About‑Link), aktive Seite per Parameter
 - _includes/footer.html: Wiederverwendbarer Footer (Versionstext, Datenschutz‑Hinweis)
-- _config.yml: Jekyll‑Konfiguration (kramdown, permalink)
+- _config.yml: Jekyll‑Konfiguration (kramdown, permalink: pretty)
 - bootstrap/: Lokales Bootstrap (CSS/JS). Keine CDN‑Abhängigkeiten.
-- Markdown/: Projektinformationen und „Über das Projekt“ (über Navbar verlinkt)
+- Markdown/: Projektinformationen und „Über das Projekt" (über Navbar verlinkt)
+- .gitignore: Ausschluss von generierten Dateien (_site/, .jekyll-cache/, etc.)
 
 Design- und Technikvorgaben
 - Barrierefreiheit: Semantisches HTML, ausreichender Kontrast (mind. WCAG AA), sichtbarer Fokus, Skip‑Link, Tastaturnavigation
 - Performance: Schnelle Ladezeit; nur notwendiges CSS/JS; keine externen Tracker, keine Webfonts (oder lokal eingebunden)
 - Robustheit: Seite funktioniert auch ohne JavaScript; progressive Enhancement, kein Client‑State notwendig
 - Responsiv: Mobile‑first; große, klar beschriftete Buttons (min. 44×44 px)
-- Druck: Eigene Druckansicht (A4 optimiert), gut lesbar, „Seite drucken“‑Button
-- Datenschutz: Keine Cookies/Tracking; keine personenbezogenen Daten im Repository oder in den HTML‑Dateien; keine Formulare/Uploads; ausschließlich allgemeine Inhalte
+- Druck: Eigene Druckansicht (A4 optimiert), gut lesbar, „Seite drucken"‑Button
+- Datenschutz: Keine Cookies/Tracking; keine personenbezogenen Daten im Repository oder in den Markdown‑Dateien; keine Formulare/Uploads; ausschließlich allgemeine Inhalte
 
 Akzeptanzkriterien
 - Alle Navigationslinks funktionieren konsistent auf allen Seiten
@@ -41,15 +42,23 @@ Akzeptanzkriterien
 - Lighthouse (Mobil) Performance/Accessibility/Best Practices/SEO jeweils ≥ 90
 - Keine externen Netzwerkanfragen außer zu eigenen, lokal gehosteten Assets
 - Es sind keinerlei personenbezogene Daten enthalten; ausschließlich statische, allgemeine Informationen
- - Jekyll‑Build rendert lokal/auf GitHub Pages korrekt (Includes/Layouts, relative_url für Assets)
+- Jekyll‑Build rendert lokal/auf GitHub Pages korrekt (Includes/Layouts, relative_url für Assets)
+- Markdown-Dateien werden korrekt in HTML umgewandelt
 
 Struktur (Kurzüberblick)
-index.html (Jekyll‑Seite)
+index.md (Jekyll‑Seite)
   Front Matter → nutzt `_layouts/default.html`
   Container mit Sprachkarten (Deutsch/English)
 
-german.html / english.html (Jekyll‑Seiten)
+german.md / english.md (Jekyll‑Seiten)
   Front Matter → nutzt `_layouts/default.html`
-  Inhalt (Abschnitte siehe oben)
+  Inhalt (Abschnitte siehe oben) in Markdown-Format
+
+Technische Umsetzung
+- Jekyll 4.4.1 mit kramdown Markdown-Parser
+- Pretty URLs (permalink: pretty) für saubere URLs ohne .html-Endung
+- Bootstrap 5 für responsives Design
+- Lokale Assets ohne externe Abhängigkeiten
+- Git-Versionierung mit .gitignore für generierte Dateien
 
  
