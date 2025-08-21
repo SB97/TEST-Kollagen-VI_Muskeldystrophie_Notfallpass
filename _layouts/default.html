@@ -12,10 +12,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   
-  <!-- Just the Docs Theme -->
-  {% if site.remote_theme %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/{{ site.remote_theme }}/assets/css/just-the-docs.css">
-  {% endif %}
+
 </head>
 <body class="d-flex flex-column min-vh-100">
   <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
@@ -37,17 +34,17 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/german' | relative_url }}">
+            <a class="nav-link {% if page.active == 'de' %}active{% endif %}" href="{{ '/german/' | relative_url }}">
               <i class="bi bi-file-text"></i> Deutsch
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/english' | relative_url }}">
+            <a class="nav-link {% if page.active == 'en' %}active{% endif %}" href="{{ '/english/' | relative_url }}">
               <i class="bi bi-file-text"></i> English
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/about' | relative_url }}">
+            <a class="nav-link {% if page.active == 'about' %}active{% endif %}" href="{{ '/about/' | relative_url }}">
               <i class="bi bi-info-circle"></i> Über das Projekt
             </a>
           </li>

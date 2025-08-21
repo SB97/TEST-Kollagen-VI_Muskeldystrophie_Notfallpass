@@ -1,122 +1,50 @@
 ---
 ---
 
-/* Accessibility */
-.skip-link { 
-  position: absolute; 
-  left: -10000px; 
-  top: auto; 
-  width: 1px; 
-  height: 1px; 
-  overflow: hidden; 
-}
-.skip-link:focus { 
-  position: static; 
-  width: auto; 
-  height: auto; 
-}
+// Custom styles for the emergency pass site
 
-/* Language cards */
-.language-card { 
-  text-decoration: none; 
-  display: block;
-  transition: all 0.2s ease-in-out;
-}
-.language-card:hover {
+.language-card {
   text-decoration: none;
-}
-
-/* Simple card design */
-.simple-card {
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  background-color: #fff;
-}
-
-.simple-card:hover {
-  background-color: #f8f9fa;
-  border-color: #dee2e6 !important;
-  transform: translateY(-1px);
-}
-
-.simple-card-german {
-  border-left: 4px solid #dc3545 !important;
-}
-
-.simple-card-english {
-  border-left: 4px solid #0d6efd !important;
-}
-
-.simple-card-german:hover {
-  border-left-color: #c82333 !important;
-}
-
-.simple-card-english:hover {
-  border-left-color: #0b5ed7 !important;
-}
-
-/* Footer styles */
-.footer {
-  margin-top: auto;
-}
-
-
-
-/* Print styles */
-@media print { 
-  nav, footer, .print-controls { display: none !important; } 
-  a[href]:after { content: ""; }
-  .container { max-width: none !important; }
-  body { font-size: 12pt; }
-}
-
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  display: block;
   
-  h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
   }
+}
+
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
   
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
   }
-  
-  .simple-card {
-    padding: 1rem !important;
-  }
-  
-  .flag-icon img {
-    width: 50px !important;
-    height: 35px !important;
-  }
-  
-  .simple-card h2 {
-    font-size: 1.1rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .simple-card p {
-    font-size: 0.85rem;
-  }
-  
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-  }
-  
+}
+
+@media print {
+  nav, 
+  footer, 
   .print-controls {
-    margin-bottom: 1.5rem;
+    display: none !important;
   }
   
-  /* Improve touch targets */
-  .nav-link {
-    padding: 0.75rem 1rem;
+  a[href]:after {
+    content: "";
   }
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
 }

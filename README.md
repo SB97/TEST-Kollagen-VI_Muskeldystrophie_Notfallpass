@@ -9,8 +9,8 @@ Diese Website bietet schnell zugängliche, verlässliche Notfallhinweise für Ko
 ## 🚀 Live Demo
 
 - **Website**: [https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/](https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/)
-- **Deutsche Version**: [https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german](https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german)
-- **English Version**: [https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english](https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english)
+- **Deutsche Version**: [https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german/](https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german/)
+- **English Version**: [https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english/](https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english/)
 
 ## 🛠️ Technische Details
 
