@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
-gem "kramdown", "~> 2.4.0"
+gem "jekyll", "~> 4.4.1"
+gem "kramdown", "~> 2.5.1"
 
 group :jekyll_plugins do
   # Add any Jekyll plugins here
