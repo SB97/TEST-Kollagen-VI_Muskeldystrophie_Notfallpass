@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'de' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/bootstrap/css/bootstrap.min.css' | relative_url }}" />
+    <style>
+      .skip-link { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
+      .skip-link:focus { position:static; width:auto; height:auto; }
+      .language-card { text-decoration: none; }
+      @media print { nav, footer, .print-controls { display:none !important; } a[href]:after { content:""; } }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link btn btn-light" href="#main">{% if page.lang == 'en' %}Skip to content{% else %}Zum Inhalt springen{% endif %}</a>
+    {% include navbar.html lang=page.lang active=page.active %}
+    <main id="main">
+      {{ content }}
+    </main>
+    {% include footer.html lang=page.lang %}
+    <script src="{{ '/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+  </body>
+</html>
+
+

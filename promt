@@ -1,0 +1,55 @@
+Ziel und Rahmen
+Diese Seite stellt Notfallinformationen für das Krankheitsbild Kollagen‑VI‑Muskeldystrophie bereit. Sie wird über GitHub Pages gehostet und per QR‑Code auf einem Sticker verlinkt. Der Auftritt muss sehr simpel, robust, schnell und ohne externe Abhängigkeiten funktionieren.
+Es werden keinerlei personenbezogene Daten gehostet oder verarbeitet. Die Seite enthält ausschließlich statische, allgemeine Informationen.
+
+Inhalte der Notfallseite (fachlich)
+- Krankheitsüberblick: Kurzbeschreibung der Kollagen‑VI‑Muskeldystrophie und typische Risiken im Notfall
+- Allgemeine Akutmaßnahmen: Priorisierte, nicht patientenspezifische Handlungsempfehlungen (Checkliste)
+- Kontraindikationen: Allgemein zu vermeidende Maßnahmen/Medikamente mit kurzer Begründung
+- Hinweise für Rettungsdienst/Notaufnahme: Allgemeine Versorgungshinweise, Monitoring, Transport
+- Hinweise für Anästhesie/Intensivmedizin: Relevante, allgemeine Vorsichtsmaßnahmen (falls zutreffend)
+- Referenzen/Leitlinien: Verweise auf öffentlich zugängliche Ressourcen; keine individuellen Dokumente
+- Mehrsprachigkeit: Vollständige Inhalte auf Deutsch und Englisch
+
+Informationsarchitektur / Dateien
+- index.html:
+  - Front Matter (Jekyll): layout, title, lang, active
+  - Inhalt: Hero/Intro und zwei große Buttons (Deutsch / English)
+- german.html und english.html:
+  - Front Matter (Jekyll): layout, title, lang, active
+  - Klar strukturierte Abschnitte gemäß „Inhalte der Notfallseite“
+- _layouts/default.html: Basislayout, bindet Navbar/Footer ein, Skip‑Link, Basis‑Styles
+- _includes/navbar.html: Wiederverwendbare Navbar (DE/EN, About‑Link), aktive Seite per Parameter
+- _includes/footer.html: Wiederverwendbarer Footer (Versionstext, Datenschutz‑Hinweis)
+- _config.yml: Jekyll‑Konfiguration (kramdown, permalink)
+- bootstrap/: Lokales Bootstrap (CSS/JS). Keine CDN‑Abhängigkeiten.
+- Markdown/: Projektinformationen und „Über das Projekt“ (über Navbar verlinkt)
+
+Design- und Technikvorgaben
+- Barrierefreiheit: Semantisches HTML, ausreichender Kontrast (mind. WCAG AA), sichtbarer Fokus, Skip‑Link, Tastaturnavigation
+- Performance: Schnelle Ladezeit; nur notwendiges CSS/JS; keine externen Tracker, keine Webfonts (oder lokal eingebunden)
+- Robustheit: Seite funktioniert auch ohne JavaScript; progressive Enhancement, kein Client‑State notwendig
+- Responsiv: Mobile‑first; große, klar beschriftete Buttons (min. 44×44 px)
+- Druck: Eigene Druckansicht (A4 optimiert), gut lesbar, „Seite drucken“‑Button
+- Datenschutz: Keine Cookies/Tracking; keine personenbezogenen Daten im Repository oder in den HTML‑Dateien; keine Formulare/Uploads; ausschließlich allgemeine Inhalte
+
+Akzeptanzkriterien
+- Alle Navigationslinks funktionieren konsistent auf allen Seiten
+- Inhalte sind vollständig in Deutsch und Englisch vorhanden
+- Seite rendert ohne JavaScript korrekt und ist per Tastatur bedienbar
+- Druckversion ist übersichtlich und vollständig
+- Lighthouse (Mobil) Performance/Accessibility/Best Practices/SEO jeweils ≥ 90
+- Keine externen Netzwerkanfragen außer zu eigenen, lokal gehosteten Assets
+- Es sind keinerlei personenbezogene Daten enthalten; ausschließlich statische, allgemeine Informationen
+ - Jekyll‑Build rendert lokal/auf GitHub Pages korrekt (Includes/Layouts, relative_url für Assets)
+
+Struktur (Kurzüberblick)
+index.html (Jekyll‑Seite)
+  Front Matter → nutzt `_layouts/default.html`
+  Container mit Sprachkarten (Deutsch/English)
+
+german.html / english.html (Jekyll‑Seiten)
+  Front Matter → nutzt `_layouts/default.html`
+  Inhalt (Abschnitte siehe oben)
+
+ 

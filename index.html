@@ -1,92 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-sm navbar bg"
-      aria-label="Third navbar example"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          >Kollagen-VI Muskeldystrophie Notfallpass - notfall.col6.de</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample03"
-          aria-controls="navbarsExample03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+---
+layout: default
+title: Kollagen‑VI Muskeldystrophie – Notfallinformationen
+lang: de
+active: home
+---
 
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a class="nav-link" href=".\german.html">Notfallpass (Deutsch)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Emergencypass (English)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Über das Projekt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<div class="container py-4">
+      <header class="mb-4">
+        <h1 class="h3">Kollagen‑VI Muskeldystrophie – Notfallinformationen</h1>
+        <p class="text-muted mb-0">Statische, allgemeine Hinweise für Notfälle. Keine personenbezogenen Daten.</p>
+      </header>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <a href=".\german.html">
-                <div class="h-100 p-5 text-bg-dark rounded-3">
-                  <h2>Kollagen-VI Muskeldystrophie Notfallpass</h2>
-                  <picture>
-                    <img
-                      src="Markdown\OpenMoji_flag_Germany_1F1E9-1F1EA_color.png"
-                      class="img-fluid img-thumbnail"
-                      alt="..."
-                    />
-                  </picture>
-                </div>
-              </a>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <a class="language-card" href="german.html" aria-label="Deutsch – Notfallinformationen">
+            <div class="h-100 p-4 bg-dark text-white rounded-3">
+              <h2 class="h4 mb-3">Notfallinformationen (Deutsch)</h2>
+              <img src="{{ 'Markdown/OpenMoji_flag_Germany_1F1E9-1F1EA_color.png' | relative_url }}" class="img-fluid img-thumbnail" alt="Flagge Deutschland" />
             </div>
+          </a>
         </div>
-        <div class="col">
-          <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <a href=".\english.html">
-                <div class="h-100 p-5 text-bg-dark rounded-3">
-                  <h2>Collagen-VI Musculardystrophy Emergencypass</h2>
-                  <picture>
-                    <img
-                      src="Markdown\OpenMoji_flag_UK_1F1EC-1F1E7_color.png"
-                      class="img-fluid img-thumbnail"
-                      alt="..."
-                    />
-                  </picture>
-                </div>
-              </a>
+        <div class="col-12 col-md-6">
+          <a class="language-card" href="english.html" aria-label="English – Emergency Information">
+            <div class="h-100 p-4 bg-dark text-white rounded-3">
+              <h2 class="h4 mb-3">Emergency Information (English)</h2>
+              <img src="{{ 'Markdown/OpenMoji_flag_UK_1F1EC-1F1E7_color.png' | relative_url }}" class="img-fluid img-thumbnail" alt="Flag of the United Kingdom" />
             </div>
+          </a>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-  </body>
-</html>

@@ -1,0 +1,13 @@
+<footer class="border-top py-3 mt-4">
+  <div class="container small text-muted">
+    <span>Version {{ include.version | default: '1.0' }}</span>
+    ·
+    {% if include.lang == 'de' %}
+      <span>Statische Inhalte, keine personenbezogenen Daten</span>
+    {% else %}
+      <span>Static content, no personal data</span>
+    {% endif %}
+  </div>
+</footer>
+
+

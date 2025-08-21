@@ -1,5 +1,17 @@
-[<img src="OpenMoji_flag_Germany_1F1E9-1F1EA_color.png">DEUTSCH: Kollagen-VI Muskeldystrophie Notfallpass  ](./german.md)  
-  
-  
+---
+title: Über das Projekt
+layout: default
+lang: de
+active: about
+---
 
-[<img src="OpenMoji_flag_UK_1F1EC-1F1E7_color.png">ENGLISH: Collagen-VI Muskeldystrophie Emergencypass  ](./german.md)  
+<div class="container py-4">
+  <h1 class="h3">Über das Projekt</h1>
+  <p>Diese Seiten stellen allgemeine, statische Notfallinformationen zur Kollagen‑VI‑Muskeldystrophie bereit. Es werden keine personenbezogenen Daten gespeichert oder verarbeitet.</p>
+  <p>Der Quellcode ist bewusst einfach gehalten, ohne externe Abhängigkeiten. Bootstrap wird lokal ausgeliefert.</p>
+  <ul>
+    <li><a href="{{ 'index.html' | relative_url }}">Startseite</a></li>
+    <li><a href="{{ 'german.html' | relative_url }}">Notfallinformationen (Deutsch)</a></li>
+    <li><a href="{{ 'english.html' | relative_url }}">Emergency information (English)</a></li>
+  </ul>
+</div>
