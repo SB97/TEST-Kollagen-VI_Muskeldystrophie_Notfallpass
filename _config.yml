@@ -5,4 +5,35 @@ url: "https://sb97.github.io"
 markdown: kramdown
 permalink: pretty
 
+# Theme configuration
+remote_theme: just-the-docs/just-the-docs
+
+# Just the Docs configuration
+just_the_docs:
+  # Color scheme
+  color_scheme: light
+  
+  # Search
+  search_enabled: true
+  search:
+    heading_level: 2
+    previews: 3
+    preview_words_before: 5
+    preview_words_after: 10
+    tokenizer_separator: /[\s/\-]+/
+  
+  # Navigation
+  heading_anchors: true
+  back_to_top: true
+  back_to_top_text: "Zurück nach oben"
+  
+  # Footer
+  footer_content: "Version 1.0 · Statische Inhalte, keine personenbezogenen Daten"
+  
+  # Mobile
+  mobile_nav: true
+  
+  # Custom styling
+  custom_css: true
+
 
