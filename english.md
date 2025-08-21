@@ -7,8 +7,10 @@ active: en
 
 # Collagen‑VI Muscular Dystrophy – General Emergency Guidance
 
-<div class="print-controls">
-  <button class="btn btn-outline-secondary btn-sm" onclick="window.print()">Print page</button>
+<div class="print-controls mb-4">
+  <button class="btn btn-outline-secondary" onclick="window.print()">
+    <i class="bi bi-printer"></i> Print page
+  </button>
 </div>
 
 ## Brief overview

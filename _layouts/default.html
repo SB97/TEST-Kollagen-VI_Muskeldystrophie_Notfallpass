@@ -5,17 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/bootstrap/css/bootstrap.min.css' | relative_url }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <style>
+      /* Accessibility */
       .skip-link { position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
       .skip-link:focus { position:static; width:auto; height:auto; }
-      .language-card { text-decoration: none; }
-      @media print { nav, footer, .print-controls { display:none !important; } a[href]:after { content:""; } }
+      
+      /* Language cards */
+      .language-card { 
+        text-decoration: none; 
+        display: block;
+        transition: all 0.2s ease-in-out;
+      }
+      .language-card:hover {
+        text-decoration: none;
+      }
+      
+      /* Simple card design */
+      .simple-card {
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        background-color: #fff;
+      }
+      
+      .simple-card:hover {
+        background-color: #f8f9fa;
+        border-color: #dee2e6 !important;
+        transform: translateY(-1px);
+      }
+      
+      .simple-card-german {
+        border-left: 4px solid #dc3545 !important;
+      }
+      
+      .simple-card-english {
+        border-left: 4px solid #0d6efd !important;
+      }
+      
+      .simple-card-german:hover {
+        border-left-color: #c82333 !important;
+      }
+      
+      .simple-card-english:hover {
+        border-left-color: #0b5ed7 !important;
+      }
+      
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        
+        h1 {
+          font-size: 1.75rem;
+          margin-bottom: 1rem;
+        }
+        
+        h2 {
+          font-size: 1.5rem;
+          margin-top: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        
+        .simple-card {
+          padding: 1rem !important;
+        }
+        
+        .flag-icon img {
+          width: 50px !important;
+          height: 35px !important;
+        }
+        
+        .simple-card h2 {
+          font-size: 1.1rem;
+          margin-bottom: 0.25rem;
+        }
+        
+        .simple-card p {
+          font-size: 0.85rem;
+        }
+        
+        .btn {
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
+        }
+        
+        .print-controls {
+          margin-bottom: 1.5rem;
+        }
+        
+        /* Improve touch targets */
+        .nav-link {
+          padding: 0.75rem 1rem;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+        }
+        
+        /* Better spacing for mobile */
+        .py-4 {
+          padding-top: 2rem !important;
+          padding-bottom: 2rem !important;
+        }
+        
+        .mb-4 {
+          margin-bottom: 1.5rem !important;
+        }
+        
+        /* Improve list readability */
+        ul {
+          padding-left: 1.5rem;
+        }
+        
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+      
+      /* Large mobile and tablet optimizations */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .simple-card {
+          padding: 1.25rem !important;
+        }
+        
+        .flag-icon img {
+          width: 55px !important;
+          height: 38px !important;
+        }
+      }
+      
+      /* Sticky footer styles */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      main {
+        flex: 1 0 auto;
+      }
+      
+      footer {
+        flex-shrink: 0;
+      }
+      
+      /* Print styles */
+      @media print { 
+        nav, footer, .print-controls { display:none !important; } 
+        a[href]:after { content:""; }
+        .container { max-width: none !important; }
+        body { font-size: 12pt; }
+      }
     </style>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <a class="skip-link btn btn-light" href="#main">{% if page.lang == 'en' %}Skip to content{% else %}Zum Inhalt springen{% endif %}</a>
     {% include navbar.html lang=page.lang active=page.active %}
-    <main id="main">
+    <main id="main" class="flex-grow-1">
       {{ content }}
     </main>
     {% include footer.html lang=page.lang %}

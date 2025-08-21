@@ -1,16 +1,32 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom" aria-label="{{ include.aria_label | default: 'Main navigation' }}">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">{% if include.lang == 'en' %}COL6 Emergency{% else %}COL6 Notfall{% endif %}</a>
+    <a class="navbar-brand fw-bold" href="{{ '/' | relative_url }}">{% if include.lang == 'en' %}COL6 Emergency{% else %}COL6 Notfall{% endif %}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="{{ include.toggle_label | default: 'Toggle navigation' }}">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-        <li class="nav-item"><a class="nav-link {% if include.active == 'de' %}active{% endif %}" href="{{ '/german/' | relative_url }}">Deutsch</a></li>
-        <li class="nav-item"><a class="nav-link {% if include.active == 'en' %}active{% endif %}" href="{{ '/english/' | relative_url }}">English</a></li>
         <li class="nav-item">
-          <a class="nav-link {% if include.active == 'about' %}active{% endif %}" href="{{ '/Markdown/' | relative_url }}">
-            {% if include.lang == 'de' %}Über das Projekt{% else %}About this project{% endif %}
+          <a class="nav-link {% if include.active == 'de' %}active fw-bold{% endif %}" href="{{ '/german/' | relative_url }}">
+            <span class="d-none d-sm-inline">Deutsch</span>
+            <span class="d-sm-none">DE</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if include.active == 'en' %}active fw-bold{% endif %}" href="{{ '/english/' | relative_url }}">
+            <span class="d-none d-sm-inline">English</span>
+            <span class="d-sm-none">EN</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if include.active == 'about' %}active fw-bold{% endif %}" href="{{ '/Markdown/' | relative_url }}">
+            {% if include.lang == 'de' %}
+              <span class="d-none d-sm-inline">Über das Projekt</span>
+              <span class="d-sm-none">Info</span>
+            {% else %}
+              <span class="d-none d-sm-inline">About this project</span>
+              <span class="d-sm-none">Info</span>
+            {% endif %}
           </a>
         </li>
       </ul>

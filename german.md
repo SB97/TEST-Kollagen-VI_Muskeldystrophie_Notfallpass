@@ -7,8 +7,10 @@ active: de
 
 # Kollagen‑VI Muskeldystrophie – Allgemeine Notfallhinweise
 
-<div class="print-controls">
-  <button class="btn btn-outline-secondary btn-sm" onclick="window.print()">Seite drucken</button>
+<div class="print-controls mb-4">
+  <button class="btn btn-outline-secondary" onclick="window.print()">
+    <i class="bi bi-printer"></i> Seite drucken
+  </button>
 </div>
 
 ## Kurzüberblick
