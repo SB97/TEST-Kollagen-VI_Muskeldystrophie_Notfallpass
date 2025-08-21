@@ -32,9 +32,9 @@ bundle exec jekyll serve
 
 ## Dateistruktur
 
-- `index.html` - Startseite mit Sprachauswahl
-- `german.html` - Deutsche Notfallinformationen
-- `english.html` - Englische Notfallinformationen
+- `index.md` - Startseite mit Sprachauswahl (Markdown)
+- `german.md` - Deutsche Notfallinformationen (Markdown)
+- `english.md` - Englische Notfallinformationen (Markdown)
 - `_layouts/default.html` - Basis-Layout
 - `_includes/` - Wiederverwendbare Komponenten (Navbar, Footer)
 - `bootstrap/` - Lokale Bootstrap-Dateien
@@ -43,5 +43,5 @@ bundle exec jekyll serve
 ## URLs
 
 - Startseite: `https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/`
-- Deutsch: `https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german.html`
-- Englisch: `https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english.html`
+- Deutsch: `https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/german/`
+- Englisch: `https://sb97.github.io/TEST-Kollagen-VI_Muskeldystrophie_Notfallpass/english/`
