@@ -67,10 +67,26 @@ active: about
           <i class="bi bi-info-circle text-info"></i>
           Projekt-Status
         </h5>
+        {% assign release_tag = site.github.latest_release.tag_name %}
+        {% assign build_revision = site.github.build_revision %}
+        {% assign version_label = site.data.project.version | default: release_tag %}
+        {% unless version_label %}
+          {% if build_revision %}
+            {% assign version_label = build_revision | slice: 0, 7 %}
+          {% endif %}
+        {% endunless %}
+        {% assign version_label = version_label | default: "1.0" %}
+        {% assign pushed_at = site.github.repository.pushed_at | default: site.time %}
+        {% assign last_update = pushed_at | date: "%d.%m.%Y" %}
+        {% assign status_label = site.data.project.status | default: "Aktiv" %}
+        {% assign status_note = site.data.project.status_note %}
         <p class="card-text">
-          <strong>Version:</strong> 1.0<br>
-          <strong>Letzte Aktualisierung:</strong> August 2024<br>
-          <strong>Status:</strong> Aktiv
+          <strong>Version:</strong> {{ version_label }}<br>
+          <strong>Letzte Aktualisierung:</strong> {{ last_update }}<br>
+          <strong>Status:</strong> {{ status_label }}
+          {% if status_note %}
+          <br><small class="text-muted">{{ status_note }}</small>
+          {% endif %}
         </p>
       </div>
     </div>
@@ -102,3 +118,4 @@ active: about
     </small>
   </p>
 </div>
+
