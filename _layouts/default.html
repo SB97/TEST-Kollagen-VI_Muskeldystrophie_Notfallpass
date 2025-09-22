@@ -67,8 +67,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
+          {% assign pushed_at = site.github.repository.pushed_at | default: site.time %}
+          {% assign last_update = pushed_at | date: "%d.%m.%Y" %}
           <small class="text-muted">
-            {{ site.footer_content | default: "Version 1.0" }}
+            Letzte Aktualisierung: {{ last_update }}
           </small>
         </div>
         <div class="col-md-6 text-end">
