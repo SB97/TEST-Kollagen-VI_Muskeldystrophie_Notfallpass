@@ -8,7 +8,7 @@ active: home
 <div class="container py-4">
   <header class="mb-4">
     <h1 class="h3">Kollagen‑VI Muskeldystrophie – Notfallinformationen</h1>
-    <p class="text-muted mb-0">Statische, allgemeine Hinweise für Notfälle. Keine personenbezogenen Daten.</p>
+    <p class="text-muted mb-0">Statische, allgemeine Hinweise für Notfälle zum Krankheitsbild der Kollagen-VI Muskeldystophie, auch Bethlem oder Ullrich gennant.</p>
   </header>
 
   <div class="row g-4">
