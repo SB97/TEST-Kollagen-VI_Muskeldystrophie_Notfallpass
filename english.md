@@ -7,7 +7,9 @@ active: en
 
 # Collagen‑VI Muscular Dystrophy – General Emergency Guidance
 
-This page provides static, general information only. No personal data is stored. Use your browser’s print function if a paper copy is needed.
+This page provides static, general information only. No personal data is stored.
+
+[Print page](#){: .btn .btn-outline-secondary .btn-sm .print-controls onclick="window.print()" }
 
 ## Brief overview
 

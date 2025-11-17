@@ -7,7 +7,9 @@ active: de
 
 # Kollagen‑VI Muskeldystrophie – Allgemeine Notfallhinweise
 
-Diese Seite enthält ausschließlich statische, allgemeine Informationen. Es werden keine personenbezogenen Daten gespeichert. Zum Ausdrucken bitte die Druckfunktion des Browsers verwenden.
+Diese Seite enthält ausschließlich statische, allgemeine Informationen. Es werden keine personenbezogenen Daten gespeichert.
+
+[Seite drucken](#){: .btn .btn-outline-secondary .btn-sm .print-controls onclick="window.print()" }
 
 ## Kurzüberblick
 
