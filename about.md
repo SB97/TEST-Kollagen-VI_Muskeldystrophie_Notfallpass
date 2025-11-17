@@ -21,8 +21,6 @@ Kollagen‑VI Muskeldystrophien sind seltene neuromuskuläre Erkrankungen, die b
 
 ### Inhalte
 
-- **Deutsche Version:** Vollständige Notfallinformationen auf Deutsch
-- **English Version:** Complete emergency information in English
 - **Druckversion:** Alle Seiten sind druckoptimiert
 - **Mobile Optimierung:** Responsive Design für alle Geräte
 
@@ -37,14 +35,6 @@ Kollagen‑VI Muskeldystrophien sind seltene neuromuskuläre Erkrankungen, die b
 ### Verwendung
 
 Die Informationen auf dieser Website sind als allgemeine Richtlinien gedacht und ersetzen nicht die individuelle medizinische Beurteilung. Bei Unsicherheit sollte immer Rücksprache mit erfahrenen Zentren gehalten werden.
-
-### Quellen
-
-Die medizinischen Informationen basieren auf aktuellen Leitlinien und wissenschaftlichen Publikationen:
-
-- OrphanAnesthesia – Rare Diseases Supplement 02‑2020
-- Collagen VI CMD – Schweizerische Muskelgesellschaft
-- GeneReviews: Collagen VI‑Related Dystrophies
 
 > **Wichtiger Hinweis:** Diese Informationen ersetzen nicht die individuelle medizinische Beurteilung. Bei Unsicherheit immer Rücksprache mit erfahrenen Zentren halten.
 
